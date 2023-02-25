@@ -1,27 +1,27 @@
 import './App.css';
 import * as React from 'react';
 import Slider from '@mui/material/Slider';
+import Counter from './features/counter/Counter';
+import { useSelector, useDispatch } from 'react-redux'
+import { setTo } from './features/counter/counterSlice'
 
 function App() {
 
-  const [value, setValue] = React.useState(
-    30,
-  );
+  const count = useSelector(state => state.counter.value)
+  const dispatch = useDispatch()
 
   const handleSliderChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
-  const handleInputChange = (event) => {
-    setValue(event.target.value === '' ? '' : Number(event.target.value));
+    dispatch(setTo(newValue));
   };
 
   return (
     <div className="App">
       <header className="App-header">
+        <Counter></Counter>
         <Slider
           aria-label="Temperature"
-          defaultValue={30}
+          value={count}
+          defaultValue={count}
           onChange={handleSliderChange}
           color="secondary"
         />
