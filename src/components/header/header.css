@@ -1,0 +1,36 @@
+.header {
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-right: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+.logo{
+    width: 150px;
+}
+
+.emoji{
+    width: 50px;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.navigationObject{
+    width: 220px;
+    padding: 10px;
+    margin-left: 60px;
+    background-color: #d59c66;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}

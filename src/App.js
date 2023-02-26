@@ -4,6 +4,7 @@ import Slider from '@mui/material/Slider';
 import Counter from './features/counter/Counter';
 import { useSelector, useDispatch } from 'react-redux'
 import { setTo } from './features/counter/counterSlice'
+import Header from './components/Header/Header';
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <Header/>
+      <body className="App-body">
         <Counter></Counter>
         <Slider
           aria-label="Temperature"
@@ -28,7 +30,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-      </header>
+      </body>
     </div>
   );
 }
