@@ -4,7 +4,7 @@ import Slider from '@mui/material/Slider';
 import Counter from './features/counter/Counter';
 import { useSelector, useDispatch } from 'react-redux'
 import { setTo } from './features/counter/counterSlice'
-import Header from './components/Header/Header';
+import Header from './components/header/Header';
 
 function App() {
 
