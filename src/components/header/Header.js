@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
-import logoUrl from '../../asssets/logo.jpeg';
-import laptopUrl from '../../asssets/laptop.png';
+import logoUrl from '../../assets/logo.png';
+import laptopUrl from '../../assets/laptop.png';
 const Header = () => (
   <div className="header">
     <div className="logo">
