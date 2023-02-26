@@ -10,11 +10,11 @@ const Header = () => (
     <div className="navigation">
         <div className="navigationObject">
             <img className="emoji" src={laptopUrl} alt="Programming"/>
-            Programming
+            <h3>Programming</h3>
         </div>
         <div className="navigationObject">
             <img className="emoji" src={laptopUrl} alt="Programming"/>
-            Programming
+            <h3>Programming</h3>
         </div>
     </div>
   </div>
