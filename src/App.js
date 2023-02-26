@@ -5,6 +5,7 @@ import Counter from './features/counter/Counter';
 import { useSelector, useDispatch } from 'react-redux'
 import { setTo } from './features/counter/counterSlice'
 import Header from './components/header/Header';
+import LandingPage from './components/landing/Landing';
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <body className="App-body">
+      <div className="App-body">
+        <LandingPage/>
         <Counter></Counter>
         <Slider
           aria-label="Temperature"
@@ -27,10 +29,7 @@ function App() {
           onChange={handleSliderChange}
           color="secondary"
         />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </body>
+      </div>
     </div>
   );
 }

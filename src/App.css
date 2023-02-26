@@ -34,7 +34,14 @@ html, body, #root,  #app, #app>div {
 }
 
 .h3{
-  font-size: 16px;
+  font-size: 18px;
+}
+.h6{
+  font-size: 12px;
+  margin: 5px;
+}
+.highlightRed {
+  color: #8c0000;
 }
 
 @keyframes App-logo-spin {
