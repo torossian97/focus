@@ -1,13 +1,15 @@
 import React from 'react';
 import './header.css';
 import logoUrl from '../../assets/logo.png';
+import {Link} from "react-router-dom";
+
 const Header = () => (
   <div className="header">
     <div className="">
-      <img className="logo" src={logoUrl} alt="ForceMeTo"/>
+      <Link to="/"><img className="logo" src={logoUrl} alt="ForceMeTo"/></Link>
     </div>
     <div className="navigationObject">
-      <h3>DEMO</h3>
+      <Link to="/demo"><h3>DEMO</h3></Link>
     </div>
   </div>
 )
