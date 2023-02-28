@@ -1,7 +1,9 @@
 import React from 'react';
 import './landing.css';
+import {Helmet} from "react-helmet";
 
 import landingArrow from '../../assets/arrow-down-icon.svg';
+import Form from '../form/Form';
 
 const LandingPage = () => (
   <div className='landing'>
@@ -19,7 +21,7 @@ const LandingPage = () => (
         </h6>
       </div>
       <div className='landingPageForm'>
-        <div class="ml-embedded" data-form="eSi8jm"></div>
+        <Form/>
       </div>
     </div>
     <div className='learnMore'>
