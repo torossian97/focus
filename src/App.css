@@ -1,23 +1,12 @@
 html, body, #root,  #app, #app>div {
-  height: 100%
+  height: 100%;
 }
 
 .App {
   display: flex;
   flex-direction: column;
-  background-color: #efebe0;
+  background-color: #FFFFFF;
   height: 100%;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-body {
@@ -29,10 +18,6 @@ html, body, #root,  #app, #app>div {
   font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 .h3{
   font-size: 18px;
 }
@@ -42,13 +27,5 @@ html, body, #root,  #app, #app>div {
 }
 .highlightRed {
   color: #8c0000;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  width: 100%;
 }
