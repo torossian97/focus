@@ -1,27 +1,31 @@
 import React from 'react';
 import './landing.css';
-import landingImage from '../../assets/focu.png';
+
 import landingArrow from '../../assets/arrow-down-icon.svg';
-const Header = () => (
+
+const LandingPage = () => (
   <div className='landing'>
     <div className='landingPage'>
-          <div className='landingPageImage'>
-            <img className="landingImage" src={landingImage} alt="Procrastinator Sitting at his desk, unable to complete any work."/>
-          </div>
-          <div className='landingPageText'>
-          <h1>Want to stop procrastinating <span class="highlightRed">right now?</span></h1>
-          <ol>
-            <li>Define <span class="highlightRed">your task</span></li>
-            <li>Set a <span class="highlightRed">deadline</span></li>
-            <li>Put <span class="highlightRed">your money</span> on the line</li>
-            <li>Either do it, or <span class="highlightRed">lose it all</span> (to <span class="highlightRed">charity</span>)</li>
-          </ol>
-          </div>
+      <div className='landingPageHeader'>
+        <div className="heading">
+          <h1><span class="highlightRed">Break </span>your</h1>
+          <h1><span class="highlightRed"> procrastination </span>cycle</h1>
+          <h1><span class="highlightRed"> now.</span></h1>
         </div>
-        <div className='learnMore'>
-        <h6>No login required. Learn more below or start NOW above.</h6>
-        <img className="landingArrow" src={landingArrow} alt="Down arrow"/>
+        <h6 className="hook">ForceMeTo is a simple, no sign-up tool to help you be productive on those
+          really hard days, enabling custom financial incentives to be set. Research
+          shows that “small wins” are the antidote to both short and long-term
+          procrastination. Let’s get those wins.
+        </h6>
+      </div>
+      <div className='landingPageForm'>
+        <div class="ml-embedded" data-form="eSi8jm"></div>
+      </div>
     </div>
+    <div className='learnMore'>
+      <h6>How it works.</h6>
+      <img className="landingArrow" src={landingArrow} alt="Down arrow"/>
     </div>
+  </div>
 )
-export default Header;
+export default LandingPage;
