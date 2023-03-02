@@ -1,0 +1,29 @@
+.scrolling-wrapper-flexbox {
+    display: flex;
+    width: 33%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.card {
+    flex: 0 0 auto;
+    margin: 10px;
+    border-radius: 25px !important;
+}
+.active{
+    border: 5px solid red;
+}
+.taskImage{
+    width: 40px;
+}
+.taskText{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+@media all and (max-width:1200px)
+{
+    .scrolling-wrapper-flexbox{
+        width: 80%;
+    }
+}

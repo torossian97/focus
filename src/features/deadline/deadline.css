@@ -1,0 +1,22 @@
+.deadlineSlider{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #d4c095;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.slider{
+    width: 90%;
+}
+
+@media all and (max-width:1200px)
+{
+    .deadlineSlider{
+        width: 80%;
+    }
+}

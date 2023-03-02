@@ -1,5 +1,6 @@
 .landing{
   background-color: #efebe0;
+  width:100%;
 }
 
 .landingPage{
@@ -44,10 +45,6 @@ h6{
 .emojiSmall{
   width: 25px;
   padding-left: 5px;
-}
-
-.landing{
-    width:100%;
 }
 
 .landingPage{
