@@ -4,4 +4,35 @@
     text-align: center;
     align-items: center;
     width: 100%;
+    background-color: #ffffff;
+}
+
+.promptWrap{
+    display: flex;
+    width:33%;
+}
+
+.prompt{
+    margin:15px;
+}
+
+@media all and (max-width:1200px)
+{
+    .promptWrap{
+        width: 50%;
+    }
+}
+
+@media all and (max-width:1000px)
+{
+    .promptWrap{
+        width: 60%;
+    }
+}
+
+@media all and (max-width:800px)
+{
+    .promptWrap{
+        width: 80%;
+    }
 }

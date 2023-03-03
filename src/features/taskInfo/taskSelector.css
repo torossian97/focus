@@ -8,22 +8,21 @@
     border-radius: 25px;
     align-items: center;
 }
-.charityCard {
-    display: flex;
+.taskCard {
     flex: 0 0 auto;
+    display: flex;
     margin: 10px;
     width: 120px;
-    height: 120px;
     border-radius: 25px !important;
     align-content: center;
 }
 .active{
     background-color: #ffebcc !important;
 }
-.charityImage{
-    width: 50px;
+.taskImage{
+    width: 40px;
 }
-.charityText{
+.taskText{
     margin-top: 5px;
     margin-bottom: 0;
 }

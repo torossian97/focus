@@ -19,7 +19,6 @@ if((dateNow % 3600000) < 1800000){
   dateNow = dateNow - (dateNow % 3600000);
   dateNow = dateNow + 3600000 + 1800000;
 }
-const oneHour = 60*60*1000;
 
 const toWrittenDate = (date) => {
   var dateTimeNow = new Date(date)
@@ -46,21 +45,25 @@ const toWrittenDate = (date) => {
   return format('{0} @ {1}:{2} {3}', day, hour, minutes, apm)
 };
 
-export const deadlineSlice = createSlice({
-  name: 'deadline',
+export const stakeInfoSlice = createSlice({
+  name: 'stakeInfo',
   initialState: {
-    value: dateNow,
-    written: toWrittenDate(dateNow)
+    date: dateNow,
+    dateWritten: toWrittenDate(dateNow),
+    money: 0
   },
   reducers: {
-    setTo: (state, action) => {
-        state.value = action.payload
-        state.written = toWrittenDate(action.payload)
-    }
+    setDateTo: (state, action) => {
+      state.date = action.payload
+      state.dateWritten = toWrittenDate(action.payload)
+    },
+    setMoneyTo: (state, action) => {
+      state.money = action.payload
+  }
   }
 })
 
 // Action creators are generated for each case reducer function
-export const { setTo } = deadlineSlice.actions
+export const { setDateTo, setMoneyTo } = stakeInfoSlice.actions
 
-export default deadlineSlice.reducer
+export default stakeInfoSlice.reducer

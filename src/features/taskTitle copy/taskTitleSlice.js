@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-export const marketFormSlice = createSlice({
-  name: 'marketForm',
+export const taskTitleSlice = createSlice({
+  name: 'taskTitle',
   initialState: {
     usage: "writing"
   },
@@ -13,6 +13,6 @@ export const marketFormSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { setUsageTo } = marketFormSlice.actions
+export const { setUsageTo } = taskTitleSlice.actions
 
-export default marketFormSlice.reducer
+export default taskTitleSlice.reducer

@@ -1,10 +1,10 @@
-.deadlineSlider{
+.commonSlider{
     width: 33%;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    background-color: #d4c095;
+    background-color: #ffebcc;
     border-radius: 25px;
     padding: 10px;
     margin: 10px;
@@ -16,7 +16,21 @@
 
 @media all and (max-width:1200px)
 {
-    .deadlineSlider{
+    .commonSlider{
+        width: 50%;
+    }
+}
+
+@media all and (max-width:1000px)
+{
+    .commonSlider{
+        width: 60%;
+    }
+}
+
+@media all and (max-width:800px)
+{
+    .commonSlider{
         width: 80%;
     }
 }
