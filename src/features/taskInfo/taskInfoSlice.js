@@ -12,6 +12,15 @@ export const taskInfoSlice = createSlice({
     // writing
     wordCount: 0,
     writingSummary: "",
+    // studying
+    count: 0,
+    assignmentSummary: "",
+    // programming
+    vcUsername: "",
+    programmingSummary: "",
+    // video editing
+    videoLength: 1,
+    videoSummary: "",
 
   },
   reducers: {
@@ -28,10 +37,19 @@ export const taskInfoSlice = createSlice({
     setWordCountTo: (state, action) => {
       state.wordCount = action.payload
     },
+    setVcUsernameTo: (state, action) => {
+      state.vcUsername = action.payload
+    },
+    setProgrammingSummaryTo: (state, action) => {
+      state.programmingSummary = action.payload
+    },
+    setVideoLengthTo: (state, action) => {
+      state.videoLength = action.payload
+    },
   }
 })
 
 // Action creators are generated for each case reducer function
-export const { setTitleTo, setTaskTo, setWritingSummaryTo, setWordCountTo } = taskInfoSlice.actions
+export const { setTitleTo, setTaskTo, setWritingSummaryTo, setWordCountTo, setVideoLengthTo, setVcUsernameTo, setProgrammingSummaryTo } = taskInfoSlice.actions
 
 export default taskInfoSlice.reducer

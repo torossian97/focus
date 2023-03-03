@@ -54,11 +54,11 @@ export const stakeInfoSlice = createSlice({
   },
   reducers: {
     setDateTo: (state, action) => {
-        state.date = action.payload
-        state.dateWritten = toWrittenDate(action.payload)
+      state.date = action.payload
+      state.dateWritten = toWrittenDate(action.payload)
     },
     setMoneyTo: (state, action) => {
-      state.value = action.payload
+      state.money = action.payload
   }
   }
 })
