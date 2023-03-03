@@ -1,17 +1,17 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { setTo } from './deadlineSlice'
+import { setDateTo } from './stakeInfoSlice'
 
-import './deadline.css';
+import './slider.css';
 import Slider from '@mui/material/Slider'
 
 export default function Deadline() {
-  const deadline = useSelector(state => state.deadline.value)
-  const deadlineWritten = useSelector(state => state.deadline.written)
+  const deadline = useSelector(state => state.stakeInfo.date)
+  const deadlineWritten = useSelector(state => state.stakeInfo.dateWritten)
   const dispatch = useDispatch()
 
   const handleSliderChange = (event, newValue) => {
-      dispatch(setTo(newValue));
+      dispatch(setDateTo(newValue));
   };
 
   var dateNow = Date.now()
@@ -27,7 +27,7 @@ export default function Deadline() {
   const halfHour = 30*60*1000;
 
   return (
-    <div className="deadlineSlider">
+    <div className="commonSlider">
       <h2 style={{fontWeight:400,fontStyle: 'italic',margin:0}}>{deadlineWritten}</h2>
       <div className="slider">
         <Slider

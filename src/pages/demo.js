@@ -3,10 +3,12 @@ import '../App.css'
 import './demo.css'
 
 /* Features */
-import Money from '../features/money/Money'
-import Deadline from '../features/deadline/Deadline'
+import Money from '../features/stakeInfo/Money'
+import Deadline from '../features/stakeInfo/Deadline'
 import CharitySelector from '../features/scrollSelector/CharitySelector'
-import TaskSelector from '../features/scrollSelector/TaskSelector'
+import WritingTask from '../features/taskInfo/tasks/WritingTask'
+import TaskSelector from '../features/taskInfo/TaskSelector'
+import TaskTitle from '../features/taskInfo/TaskTitle'
 
 /* Components */
 import Header from '../components/header/Header'
@@ -18,9 +20,11 @@ const Demo = () => {
         <div className="App-body">
             <div className='demo'>
                 <h1>Howdy!</h1>
+                <TaskTitle/>
+                <TaskSelector/>
+                <WritingTask/>
                 <Money/>
                 <Deadline/>
-                <TaskSelector/>
                 <CharitySelector/>
             </div>
         </div>

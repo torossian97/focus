@@ -1,0 +1,29 @@
+.tasktitle{
+    display: flex;
+    width: 33%;
+    justify-content: center;
+}
+.titleInput{
+    margin: 10px !important;
+}
+
+@media all and (max-width:1200px)
+{
+    .tasktitle{
+        width: 50%;
+    }
+}
+
+@media all and (max-width:1000px)
+{
+    .tasktitle{
+        width: 60%;
+    }
+}
+
+@media all and (max-width:800px)
+{
+    .tasktitle{
+        width: 80%;
+    }
+}

@@ -1,14 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
-import moneyReducer from '../features/money/moneySlice'
-import deadlineReducer from '../features/deadline/deadlineSlice'
+import stakeInfoReducer from '../features/stakeInfo/stakeInfoSlice'
 import ScrollSelectorReducer from '../features/scrollSelector/scrollSelectorSlice'
-import marketFormReducer from '../features/marketForm/marketFormSlice'
+import taskInfoReducer from '../features/taskInfo/taskInfoSlice'
 
 export default configureStore({
   reducer: {
-    money: moneyReducer,
-    deadline: deadlineReducer,
+    stakeInfo: stakeInfoReducer,
     scrollSelector: ScrollSelectorReducer,
-    marketForm: marketFormReducer
+    taskInfo: taskInfoReducer
   }
 })

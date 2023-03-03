@@ -1,20 +1,20 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { setTo } from './moneySlice'
+import { setMoneyTo } from './stakeInfoSlice'
 
-import './money.css';
+import './slider.css';
 import Slider from '@mui/material/Slider'
 
 export default function Money() {
-  const money = useSelector(state => state.money.value)
+  const money = useSelector(state => state.stakeInfo.money)
   const dispatch = useDispatch()
 
   const handleSliderChange = (event, newValue) => {
-      dispatch(setTo(newValue));
+      dispatch(setMoneyTo(newValue));
   };
 
   return (
-    <div className="moneySlider">
+    <div className="commonSlider">
       <h2 style={{fontWeight:400,fontStyle: 'italic',margin:0}}>${money}</h2>
       <div className="slider">
         <Slider

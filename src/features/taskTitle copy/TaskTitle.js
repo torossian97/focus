@@ -1,11 +1,10 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Select, MenuItem, FormControl, InputLabel, Box} from '@mui/material';
-import { setUsageTo } from './marketFormSlice'
+import { setUsageTo } from './taskTitleSlice'
 
-export default function MarketForm() {
-  const usage = useSelector(state => state.counter.usage)
-  const task = useSelector(state => state.counter.task)
+export default function TaskTitle() {
+  const usage = useSelector(state => state.taskTitle.usage)
   const dispatch = useDispatch()
 
   const handleUsageChange = (event, newValue) => {
