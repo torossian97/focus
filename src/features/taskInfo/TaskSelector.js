@@ -23,7 +23,7 @@ export default function TaskSelector() {
   
     return (
     <div class="scrolling-wrapper-flexbox fade">
-        <Card className={task == "writing" ? "taskCard active" : "taskCard"}>
+        <Card elevation={3} className={task == "writing" ? "taskCard active" : "taskCard"}>
             <CardActionArea onClick={event => handleTaskClick(0)}>
                 <CardContent>
                     <img src={writing} className="taskImage"/>
@@ -31,7 +31,7 @@ export default function TaskSelector() {
                 </CardContent>
             </CardActionArea>
         </Card>
-        <Card className={task == "studying" ? "taskCard active" : "taskCard"}>
+        <Card elevation={3} className={task == "studying" ? "taskCard active" : "taskCard"}>
             <CardActionArea onClick={event => handleTaskClick(1)}>
                 <CardContent>
                     <img src={studying} className="taskImage"/>
@@ -39,7 +39,7 @@ export default function TaskSelector() {
                 </CardContent>
             </CardActionArea>
         </Card>
-        <Card className={task == "programming" ? "taskCard active" : "taskCard"}>
+        <Card elevation={3} className={task == "programming" ? "taskCard active" : "taskCard"}>
             <CardActionArea onClick={event => handleTaskClick(2)}>
                 <CardContent>
                     <img src={laptop} className="taskImage"/>
@@ -47,7 +47,7 @@ export default function TaskSelector() {
                 </CardContent>
             </CardActionArea>
         </Card>
-        <Card className={task == "video editing" ? "taskCard active" : "taskCard"}>
+        <Card elevation={3} className={task == "video editing" ? "taskCard active" : "taskCard"}>
             <CardActionArea onClick={event => handleTaskClick(3)}>
                 <CardContent>
                     <img src={videoEditing} className="taskImage"/>

@@ -2,16 +2,16 @@
     width: 33%;
     display: flex;
     flex-direction: column;
-    justify-items: center;
     align-items: center;
-    background-color: #ffebcc;
-    border-radius: 25px;
+    background-color: #ffffff !important;
+    border-radius: 25px !important;
     padding: 10px;
     margin: 10px;
 }
 
 .slider{
     width: 90%;
+    margin: 15px;
 }
 
 @media all and (max-width:1200px)

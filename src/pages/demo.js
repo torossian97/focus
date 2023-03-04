@@ -28,8 +28,11 @@ const Demo = () => {
                 <TaskSelector/>
                 <div className="promptWrap"><h4 className="prompt">{taskWritten}:</h4></div>
                 <Tasks/>
+                <div className="promptWrap"><h4 className="prompt">What's at stake?</h4></div>
                 <Money/>
+                <div className="promptWrap"><h4 className="prompt">When does this have to be done by?</h4></div>
                 <Deadline/>
+                <div className="promptWrap"><h4 className="prompt">Pick a charity:</h4></div>
                 <CharitySelector/>
             </div>
         </div>

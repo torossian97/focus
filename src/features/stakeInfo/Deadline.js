@@ -3,7 +3,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setDateTo } from './stakeInfoSlice'
 
 import './slider.css';
-import Slider from '@mui/material/Slider'
+import { Slider, Card } from '@mui/material'
+import stopwatch from '../../assets/stopwatch.png';
 
 export default function Deadline() {
   const deadline = useSelector(state => state.stakeInfo.date)
@@ -27,20 +28,23 @@ export default function Deadline() {
   const halfHour = 30*60*1000;
 
   return (
-    <div className="commonSlider">
-      <h2 style={{fontWeight:400,fontStyle: 'italic',margin:0}}>{deadlineWritten}</h2>
+    <Card
+      elevation={3}
+      className="commonSlider"
+    >
+      <h4 style={{fontWeight:600,fontStyle: 'italic',margin:0}}>{deadlineWritten}</h4>
       <div className="slider">
         <Slider
-        aria-label="Temperature"
+        aria-label="input-slider"
         value={deadline}
         defaultValue={deadline}
         onChange={handleSliderChange}
-        color="secondary"
+        onChangeCommitted={handleSliderChange}
         min={dateNow}
         max={dateNow + fiveDays}
         step={halfHour}
         />
       </div>
-    </div>
+    </Card>
   )
 }
