@@ -1,3 +1,7 @@
+.taskContainer{
+    width: 33%
+}
+
 .task{
     display: flex;
     flex-direction: column;
@@ -12,23 +16,79 @@
     visibility: visible;
 }
 
+.textFieldCard{
+    width: 90%;
+    padding: 15px;
+    border-radius: 25px !important;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.innerCardColumnFull{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: left;
+}
+
+.innerCardColumnRight{
+    width: 50%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.innerCardColumnLeft{
+    width: 50%;
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    text-align: left;
+}
+
 .inputBoxes{
-    margin: 15px !important;
+    width: 100% !important;
+    margin: 5px !important;
 }
 
 .taskSlider{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    background-color: #ffebcc;
-    border-radius: 25px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin: 20px;
+    align-content: center;
+    justify-content: center;
+    background-color: #ffffff;
 }
 
-.slider{
+.sliderFieldCard{
     width: 90%;
+    border-radius: 25px !important;
+    justify-items: center;
+    align-items: center;
+    margin: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media all and (max-width:1200px)
+{
+    .taskContainer{
+        width: 50%;
+    }
+}
+
+@media all and (max-width:1000px)
+{
+    .taskContainer{
+        width: 60%;
+    }
+}
+
+@media all and (max-width:800px)
+{
+    .taskContainer{
+        width: 80%;
+    }
 }
