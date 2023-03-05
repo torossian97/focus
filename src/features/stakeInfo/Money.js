@@ -14,7 +14,7 @@ export default function Money() {
   };
 
   return (
-    <Card className="commonSlider" elevation={3}>
+    <Card className="commonSlider" elevation={2}>
       <h2 style={{fontWeight:600,fontStyle: 'italic',margin:0}}>${money}</h2>
       <div className="slider">
         <Slider

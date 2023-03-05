@@ -29,7 +29,7 @@ export default function Deadline() {
 
   return (
     <Card
-      elevation={3}
+      elevation={2}
       className="commonSlider"
     >
       <h4 style={{fontWeight:600,fontStyle: 'italic',margin:0}}>{deadlineWritten}</h4>

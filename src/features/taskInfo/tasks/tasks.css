@@ -1,5 +1,5 @@
 .taskContainer{
-    width: 33%
+    width: 33%;
 }
 
 .task{
@@ -17,11 +17,19 @@
 }
 
 .textFieldCard{
-    width: 90%;
-    padding: 15px;
-    border-radius: 25px !important;
+    width: 100%;
+    border-radius: 10px !important;
     display: flex;
     flex-direction: row;
+}
+
+.textFieldCardFull{
+    width: 90%;
+    padding: 15px;
+    border-radius: 20px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 15px;
 }
 
@@ -31,6 +39,7 @@
     flex-direction: column;
     justify-items: center;
     text-align: left;
+    padding:10px;
 }
 
 .innerCardColumnRight{
@@ -53,12 +62,17 @@
     margin: 5px !important;
 }
 
+.summaryBoxes{
+    width: 100% !important;
+    margin-top: 10px !important;
+}
+
 .taskSlider{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    justify-items: center;
     background-color: #ffffff;
 }
 
@@ -70,6 +84,11 @@
     margin: 15px;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+.textFieldCardFull h6{
+    color: #E76F51;
+    font-size: 14px;
 }
 
 @media all and (max-width:1200px)
@@ -89,6 +108,6 @@
 @media all and (max-width:800px)
 {
     .taskContainer{
-        width: 80%;
+        width: 90%;
     }
 }
