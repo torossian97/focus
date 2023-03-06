@@ -29,7 +29,7 @@ export default function Deadline() {
 
   return (
     <Card
-      elevation={3}
+      elevation={2}
       className="commonSlider"
     >
       <h4 style={{fontWeight:600,fontStyle: 'italic',margin:0}}>{deadlineWritten}</h4>
@@ -43,6 +43,18 @@ export default function Deadline() {
         min={dateNow}
         max={dateNow + fiveDays}
         step={halfHour}
+        sx={{
+          color: '#E76F51',
+          '& .MuiSlider-thumb': {
+            '&:focus, &:hover, &.Mui-active, &.Mui-focusVisible': {
+              boxShadow: '0 0 0 8px #E76F5166',
+              // Reset on touch devices, it doesn't add specificity
+              '@media (hover: none)': {
+                boxShadow: "0 0 0 8px #E76F5166",
+              },
+            },
+          }
+        }}
         />
       </div>
     </Card>

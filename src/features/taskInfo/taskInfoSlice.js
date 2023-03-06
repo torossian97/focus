@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const tasks = ["writing", "studying", "programming", "video editing"]
+const tasks = ["writing", "studying", "programming", "video editing", "designing"]
+const designTypes = ["UI mockups", "typography", "publication art"]
 
 export const taskInfoSlice = createSlice({
   name: 'taskInfo',
@@ -21,6 +22,10 @@ export const taskInfoSlice = createSlice({
     // video editing
     videoLength: 1,
     videoSummary: "",
+    // video editing
+    designIndex: 0, 
+    designType: designTypes[0],
+    designSummary: "",
 
   },
   reducers: {
@@ -46,10 +51,21 @@ export const taskInfoSlice = createSlice({
     setVideoLengthTo: (state, action) => {
       state.videoLength = action.payload
     },
+    setDesignTypeTo: (state, action) => {
+      state.designIndex = action.payload
+      state.designType = designTypes[action.payload]
+    },
   }
 })
 
 // Action creators are generated for each case reducer function
-export const { setTitleTo, setTaskTo, setWritingSummaryTo, setWordCountTo, setVideoLengthTo, setVcUsernameTo, setProgrammingSummaryTo } = taskInfoSlice.actions
+export const { setTitleTo,
+  setTaskTo,
+  setWritingSummaryTo,
+  setWordCountTo,
+  setVideoLengthTo,
+  setVcUsernameTo,
+  setProgrammingSummaryTo,
+  setDesignTypeTo } = taskInfoSlice.actions
 
 export default taskInfoSlice.reducer

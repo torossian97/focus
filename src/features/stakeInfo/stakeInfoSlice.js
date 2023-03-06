@@ -50,7 +50,7 @@ export const stakeInfoSlice = createSlice({
   initialState: {
     date: dateNow,
     dateWritten: toWrittenDate(dateNow),
-    money: 0
+    money: 10
   },
   reducers: {
     setDateTo: (state, action) => {
