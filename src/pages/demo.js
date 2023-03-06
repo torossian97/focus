@@ -3,6 +3,7 @@ import '../App.css'
 import './demo.css'
 
 import { useSelector } from 'react-redux'
+import { Button } from '@mui/material'
 
 /* Features */
 import Money from '../features/stakeInfo/Money'
@@ -37,6 +38,7 @@ const Demo = () => {
                 <Deadline/>
                 <div className="promptWrap"><p className="prompt">Pick a charity:</p></div>
                 <CharitySelector/>
+                <Button className="submitButton" variant="contained">Get Notified When We Launch!</Button>
             </div>
         </div>
         </div>

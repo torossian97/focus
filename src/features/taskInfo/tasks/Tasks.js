@@ -54,12 +54,15 @@ export default function Tasks() {
             <h6>What are you writing about?</h6>
             <TextField className="summaryBoxes"
               id="outlined-multiline-static"
-              label="Summary"
               multiline
               rows={4}
-              placeholder="A brief summary of what you're going to write about!"
+              placeholder="An essay on the civil war outlining..."
               onChange={handleSummaryChange}
             />
+          </div>
+          <div className="innerCardColumnFull">
+            <h6>I will submit::</h6>
+            <p className="submissionList">📄 PDF of work</p>
           </div>
         </Card>
       </div>
@@ -84,12 +87,15 @@ export default function Tasks() {
             <h6>What is your problem set about?</h6>
             <TextField className="summaryBoxes"
               id="outlined-multiline-static"
-              label="Summary"
               multiline
               rows={4}
-              placeholder="A brief summary of the problem set is about!"
+              placeholder="Human anatomy, specifically thorax..."
               onChange={handleSummaryChange}
             />
+          </div>
+          <div className="innerCardColumnFull">
+            <h6>I will submit::</h6>
+            <p className="submissionList">📄 PDF of work</p>
           </div>
         </Card>
       </div>
@@ -114,20 +120,29 @@ export default function Tasks() {
             <h6>What are you programming?</h6>
             <TextField className="summaryBoxes"
               id="outlined-multiline-static"
-              label="Summary"
               multiline
               rows={4}
-              placeholder="A brief summary of what your PRs will be (think commit message)."
+              placeholder="A brief, general summary of what your PRs will be (think commit messages)."
               onChange={handleProgrammingSummaryChange}
             />
+          </div>
+          <div className="innerCardColumnFull">
+            <h6>I will submit::</h6>
+            <p className="submissionList">🔗 Link to repo</p>
           </div>
         </Card>
       </div>
       <div className={task === 3 ? "task activeTask" : "task"}>
         <Card elevation={2} className="textFieldCardFull">
+          <div className="textFieldCard">
+            <div className="innerCardColumnLeft">
+              <h6 style={{fontWeight:800,fontStyle: 'italic', margin:"15px", marginLeft: "0px"}}>minimum length: </h6>
+            </div>
+            <div className="innerCardColumnRight">
+              <h6 style={{fontWeight:400,fontStyle: 'italic', margin:"15px", marginLeft: "auto"}}>{videoLength} minute(s)</h6>
+            </div>
+          </div>
           <div className="taskSlider">
-            <h6 style={{fontWeight:800,fontStyle: 'italic',margin:0}}>minimum length: </h6>
-            <h6 style={{fontWeight:400,fontStyle: 'italic',margin:0}}>{videoLength} minute(s)</h6>
             <div className="slider">
               <Slider
               aria-label="Temperature"
@@ -139,6 +154,7 @@ export default function Tasks() {
               max={60}
               color="secondary"
               sx={{
+                color: "#E76F51",
                 '.MuiSlider-thumb': {
                   backgroundImage: "url(" + stopwatch + ")",
                   width: "30px",
@@ -165,12 +181,15 @@ export default function Tasks() {
             <h6>What is your video about?</h6>
             <TextField className="summaryBoxes"
               id="outlined-multiline-static"
-              label="Summary"
               multiline
               rows={4}
-              placeholder="A brief summary of what your video is going to be about!"
+              placeholder="My backpacking trip through asia!"
               onChange={handleSummaryChange}
             />
+          </div>
+          <div className="innerCardColumnFull">
+            <h6>I will submit::</h6>
+            <p className="submissionList">🔗 Link to video</p>
           </div>
         </Card>
       </div>
@@ -199,12 +218,15 @@ export default function Tasks() {
             <h6>Tell us about your {designType}?</h6>
             <TextField className="summaryBoxes"
               id="outlined-multiline-static"
-              label="Summary"
               multiline
               rows={4}
-              placeholder="What are your designs going to showcase?"
+              placeholder="Designs for a web landing page for a financial company..."
               onChange={handleProgrammingSummaryChange}
             />
+          </div>
+          <div className="innerCardColumnFull">
+            <h6>I will submit::</h6>
+            <p className="submissionList">📄 PDF of work</p>
           </div>
         </Card>
       </div>

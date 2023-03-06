@@ -12,8 +12,6 @@ import design from '../../assets/design.png';
 import './taskSelector.css';
 import { setTaskTo } from './taskInfoSlice'
 
-
-
 export default function TaskSelector() {
     const task = useSelector(state => state.taskInfo.taskWritten)
     const dispatch = useDispatch()

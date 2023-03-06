@@ -16,9 +16,19 @@
     margin:15px;
 }
 
+.submitButton{
+    width: 33%;
+    background-color: #E76F51 !important;
+    margin: 25px !important;
+    padding: 15px !important;
+}
+
 @media all and (max-width:1200px)
 {
     .promptWrap{
+        width: 50%;
+    }
+    .submitButton{
         width: 50%;
     }
 }
@@ -28,11 +38,17 @@
     .promptWrap{
         width: 60%;
     }
+    .submitButton{
+        width: 60%;
+    }
 }
 
 @media all and (max-width:800px)
 {
     .promptWrap{
+        width: 90%;
+    }
+    .submitButton{
         width: 90%;
     }
 }
