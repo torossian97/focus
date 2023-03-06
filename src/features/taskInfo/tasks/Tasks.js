@@ -61,8 +61,19 @@ export default function Tasks() {
             />
           </div>
           <div className="innerCardColumnFull">
-            <h6>I will submit::</h6>
-            <p className="submissionList">📄 PDF of work</p>
+            <h6>I will submit:</h6>
+            <div className="submissionCheck">
+              <p className="submissionList">📄 PDF of work</p>
+            </div>
+          </div>
+          <div className="innerCardColumnFull">
+            <h6>Checks upon submission:</h6>
+            <div className="submissionCheck">
+              <p className="submissionList">🕵️ Summary match</p>
+              <p className="submissionList">👯 plagiarism</p>
+              <p className="submissionList">🤖 AI generation</p>
+              <p className="submissionList">🧮 word count</p>
+            </div>
           </div>
         </Card>
       </div>
@@ -94,8 +105,19 @@ export default function Tasks() {
             />
           </div>
           <div className="innerCardColumnFull">
-            <h6>I will submit::</h6>
-            <p className="submissionList">📄 PDF of work</p>
+            <h6>I will submit:</h6>
+            <div className="submissionCheck">
+              <p className="submissionList">📄 PDF of work</p>
+            </div>
+          </div>
+          <div className="innerCardColumnFull">
+            <h6>Checks upon submission:</h6>
+            <div className="submissionCheck">
+              <p className="submissionList">🕵️ Summary match</p>
+              <p className="submissionList">👯 plagiarism</p>
+              <p className="submissionList">🤖 AI generation</p>
+              <p className="submissionList">🧮 question count</p>
+            </div>
           </div>
         </Card>
       </div>
@@ -127,8 +149,19 @@ export default function Tasks() {
             />
           </div>
           <div className="innerCardColumnFull">
-            <h6>I will submit::</h6>
-            <p className="submissionList">🔗 Link to repo</p>
+            <h6>I will submit:</h6>
+            <div className="submissionCheck">
+              <p className="submissionList">🔗 Link to repo</p>
+            </div>
+          </div>
+          <div className="innerCardColumnFull">
+            <h6>Checks upon submission:</h6>
+            <div className="submissionCheck">
+              <p className="submissionList">🕵️ Summary match</p>
+              <p className="submissionList">🤖 AI generation</p>
+              <p className="submissionList">👤 user</p>
+              <p className="submissionList">📅 date</p>
+            </div>
           </div>
         </Card>
       </div>
@@ -188,8 +221,18 @@ export default function Tasks() {
             />
           </div>
           <div className="innerCardColumnFull">
-            <h6>I will submit::</h6>
-            <p className="submissionList">🔗 Link to video</p>
+            <h6>I will submit:</h6>
+            <div className="submissionCheck">
+              <p className="submissionList">🔗 Link to video</p>
+            </div>
+          </div>
+          <div className="innerCardColumnFull">
+            <h6>Checks upon submission:</h6>
+            <div className="submissionCheck">
+              <p className="submissionList">🕵️ Summary match</p>
+              <p className="submissionList">⏱️ length</p>
+              <p className="submissionList">📅 date</p>
+            </div>
           </div>
         </Card>
       </div>
@@ -225,8 +268,17 @@ export default function Tasks() {
             />
           </div>
           <div className="innerCardColumnFull">
-            <h6>I will submit::</h6>
-            <p className="submissionList">📄 PDF of work</p>
+            <h6>I will submit:</h6>
+            <div className="submissionCheck">
+              <p className="submissionList">📄 PDF of work</p>
+            </div>
+          </div>
+          <div className="innerCardColumnFull">
+            <h6>Checks upon submission:</h6>
+            <div className="submissionCheck">
+              <p className="submissionList">🕵️ Summary match</p>
+              <p className="submissionList">🎨 design type match</p>
+            </div>
           </div>
         </Card>
       </div>
