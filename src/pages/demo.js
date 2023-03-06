@@ -4,6 +4,7 @@ import './demo.css'
 
 import { useSelector } from 'react-redux'
 import { Button } from '@mui/material'
+import {Link} from "react-router-dom";
 
 /* Features */
 import Money from '../features/stakeInfo/Money'
@@ -38,7 +39,7 @@ const Demo = () => {
                 <Deadline/>
                 <div className="promptWrap"><p className="prompt">Pick a charity:</p></div>
                 <CharitySelector/>
-                <Button className="submitButton" variant="contained">Get Notified When We Launch!</Button>
+                <Button className="submitButton" variant="contained" component={Link} to="/">Get Notified When We Launch!</Button>
             </div>
         </div>
         </div>

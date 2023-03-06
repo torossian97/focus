@@ -102,6 +102,11 @@
     background-color: #E76F5166;
     font-size: 12px;
     font-weight: 600;
+    margin-right:5px;
+}
+
+.submissionCheck{
+    flex-flow: wrap;
 }
 
 @media all and (max-width:1200px)
