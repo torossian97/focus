@@ -17,6 +17,7 @@ import DropDown from '../features/taskInfo/DropDown'
 
 /* Components */
 import Header from '../components/header/Header'
+import Footer from '../components/footer/Footer';
 
 const Demo = () => {
     const taskWritten = useSelector(state => state.taskInfo.taskWritten)
@@ -42,6 +43,7 @@ const Demo = () => {
                 <Button className="submitButton" variant="contained" component={Link} to="/">Get Notified When We Launch!</Button>
             </div>
         </div>
+        <Footer/>
         </div>
     );
 };

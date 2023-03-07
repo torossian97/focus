@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.css';
-import logoUrl from '../../assets/logo.png';
+import logoUrl from '../../assets/forcemeto.svg';
 import {Link} from "react-router-dom";
 
 const Header = () => (
@@ -9,7 +9,10 @@ const Header = () => (
       <Link to="/"><img className="logo" src={logoUrl} alt="ForceMeTo"/></Link>
     </div>
     <div className="navigationObject">
-      <Link to="/demo"><h3>DEMO</h3></Link>
+      <Link to="/"><h3>Home</h3></Link>
+    </div>
+    <div className="navigationObject">
+      <Link to="/demo"><h3>Demo</h3></Link>
     </div>
   </div>
 )

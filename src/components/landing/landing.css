@@ -1,12 +1,6 @@
 .landing{
-  background-color: #efebe0;
   width:100%;
-}
-
-.landingPage{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+  background-size:cover;
 }
 
 .landingPageHeader{
@@ -49,7 +43,6 @@ h6{
 
 .landingPage{
   width:100%;
-  margin-top: 50px;
   display: flex;
   flex-direction: row;
 }
@@ -64,11 +57,25 @@ h6{
 
 .learnMore > h6{
   font-weight: 200;
+  cursor: pointer;
 }
 
-.landingArrow{
-  width: 20px;
-  margin: 20px;
+.workingSection{
+  display: flex;
+  flex-direction: row;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 30px;
+  max-width: 900px;
+}
+
+.textSection{
+  display: flex;
+  flex-direction: column;
+}
+
+.landingImage{
+  width: 350px;
 }
 
 @media all and (max-width:800px)
@@ -107,3 +114,22 @@ h6{
     font-size: 3.25vmin;
   }
 }
+
+.landingArrow {
+  animation: MoveUpDown 2s linear infinite;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
