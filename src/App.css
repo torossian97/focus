@@ -5,7 +5,7 @@ html, body, #root,  #app, #app>div {
 .App {
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
+  background-color: #f4f4f4;
   height: 100%;
 }
 
@@ -20,12 +20,17 @@ html, body, #root,  #app, #app>div {
 
 .h3{
   font-size: 18px;
+  color: #ffffff;
 }
 .h6{
   font-size: 12px;
   margin: 5px;
 }
 .highlightRed {
-  color: #8c0000;
+  color: #c02924;
   width: 100%;
+}
+
+a:-webkit-any-link {
+  color: #1d1d1d;
 }
