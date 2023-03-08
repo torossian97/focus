@@ -6,8 +6,9 @@ import {
   Routes,
   Route
  } from "react-router-dom";
- import Landing from "./pages"
- import Demo from "./pages/demo"
+ import Landing from "./pages";
+ import Demo from "./pages/demo";
+
 
 function App() {
   return (
