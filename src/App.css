@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
 html, body, #root,  #app, #app>div {
   height: 100%;
+  font-family: 'Inter', serif;
 }
+
 
 .App {
   display: flex;
   flex-direction: column;
-  background-color: #f4f4f4;
-  height: 100%;
+  background-color: #ffffff;
+  height: fit-content;
+  width: 100%;
 }
 
 .App-body {
@@ -15,7 +20,7 @@ html, body, #root,  #app, #app>div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 20px;
 }
 
 .h3{
@@ -34,3 +39,14 @@ html, body, #root,  #app, #app>div {
 a:-webkit-any-link {
   color: #1d1d1d;
 }
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }

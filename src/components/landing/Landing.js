@@ -2,7 +2,7 @@ import React from 'react';
 import './landing.css';
 import {Helmet} from "react-helmet";
 
-import landingArrow from '../../assets/landingTask.svg';
+import landingArrow from '../../assets/arrow-down-icon.svg';
 import landingImageOne from '../../assets/landingTime.svg';
 import landingImageTwo from '../../assets/landingDenied.svg';
 import landingImageThree from '../../assets/landingPay.svg';
@@ -24,53 +24,51 @@ const LandingPage = () => (
           procrastination. Let’s get those wins.
         </h6>
       </div>
-      <div className='landingPageForm'>
-        <Form/>
+      <div className='learnMore'>
+        <h6>See how it works</h6>
+        <img className="landingArrow" src={landingArrow} alt="Down arrow"/>
       </div>
     </div>
-    <div className='learnMore'>
-      <h6>See how it works</h6>
-      <img className="landingArrow" src={landingArrow} alt="Down arrow"/>
-    </div>
+    <div className='landingBody'>
     <div className="workingSection">
-      <img className="landingImage" src={landingImageOne} alt="Person doing some tasks"/>
-      <div className='textSection'>
-        <h2>1. Lorem Ipsum</h2>
-        <h6>Research
-          shows that “small wins” are the antidote to both short and long-term
-          procrastination. Let’s get those wins.</h6>
-      </div>
+          <img className="landingImage" src={landingImageOne} alt="Person doing some tasks"/>
+          <div className='textSection'>
+            <h2>1. Lorem Ipsum</h2>
+            <h6>Research
+              shows that “small wins” are the antidote to both short and long-term
+              procrastination. Let’s get those wins.</h6>
+          </div>
+        </div>
+        <div className="workingSection">
+        
+          <div className='textSection'>
+            <h2>2. Lorem Ipsum</h2>
+            <h6>Research
+              shows that “small wins” are the antidote to both short and long-term
+              procrastination. Let’s get those wins.</h6>
+          </div>
+          <img className="landingImage" src={landingImageTwo} alt="Person doing some tasks"/>
+        </div>
+        <div className="workingSection">
+          <img className="landingImage" src={landingImageThree} alt="Person doing some tasks"/>
+          <div className='textSection'>
+            <h2>3. Lorem Ipsum</h2>
+            <h6>Research
+              shows that “small wins” are the antidote to both short and long-term
+              procrastination. Let’s get those wins.</h6>
+        </div>
+        </div>
+        <div className="workingSection">
+          
+          <div className='textSection'>
+            <h2>4. Lorem Ipsum</h2>
+            <h6>Research
+              shows that “small wins” are the antidote to both short and long-term
+              procrastination. Let’s get those wins.</h6>
+          </div>
+          <img className="landingImage" src={landingImageFour} alt="Person doing some tasks"/>
+        </div>
     </div>
-    <div className="workingSection">
-     
-      <div className='textSection'>
-        <h2>2. Lorem Ipsum</h2>
-        <h6>Research
-          shows that “small wins” are the antidote to both short and long-term
-          procrastination. Let’s get those wins.</h6>
-      </div>
-      <img className="landingImage" src={landingImageTwo} alt="Person doing some tasks"/>
-    </div>
-    <div className="workingSection">
-      <img className="landingImage" src={landingImageThree} alt="Person doing some tasks"/>
-      <div className='textSection'>
-        <h2>3. Lorem Ipsum</h2>
-        <h6>Research
-          shows that “small wins” are the antidote to both short and long-term
-          procrastination. Let’s get those wins.</h6>
-    </div>
-    </div>
-    <div className="workingSection">
-      
-      <div className='textSection'>
-        <h2>4. Lorem Ipsum</h2>
-        <h6>Research
-          shows that “small wins” are the antidote to both short and long-term
-          procrastination. Let’s get those wins.</h6>
-      </div>
-      <img className="landingImage" src={landingImageFour} alt="Person doing some tasks"/>
-    </div>
-
   </div>
 )
 export default LandingPage;

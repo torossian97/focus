@@ -1,25 +1,24 @@
 .landing{
   width:100%;
-  background-size:cover;
+}
+
+.landingPage{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  height: calc( 100vh - 65px );
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .landingPageHeader{
-  float: left;
-  width: 50%;
+  margin: 10%;
 }
 
-.landingPageForm{
-  float: right;
-  width: 50%;
-}
-
-h1{
-  margin: 0;
-  white-space: nowrap;
-}
-
-h6{
-  margin:0;
+.landingBody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .heading{
@@ -41,12 +40,6 @@ h6{
   padding-left: 5px;
 }
 
-.landingPage{
-  width:100%;
-  display: flex;
-  flex-direction: row;
-}
-  
 .learnMore{
   display: flex;
   flex-direction: column;
@@ -57,14 +50,11 @@ h6{
 
 .learnMore > h6{
   font-weight: 200;
-  cursor: pointer;
 }
 
 .workingSection{
   display: flex;
   flex-direction: row;
-  margin-left: 15%;
-  margin-right: 15%;
   margin-top: 30px;
   max-width: 900px;
 }
@@ -121,7 +111,6 @@ h6{
   bottom: 0;
   width: 20px;
   margin: 20px;
-  cursor: pointer;
 }
 
 @keyframes MoveUpDown {
