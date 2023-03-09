@@ -1,5 +1,6 @@
 .landing{
-  width:100%;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .landingPage{
@@ -7,32 +8,41 @@
   display: flex;
   flex-direction: column;
   height: calc( 100vh - 65px );
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
 .landingPageHeader{
-  margin: 10%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vw;
+  max-width: 1300px;
 }
 
 .landingBody{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.landingPageHook{
+  display: flex;
+  flex-direction: row;
 }
 
 .heading{
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
-  margin-right: 30px;
+
 }
 
-.hook{
-  font-weight: 600;
-  margin-left: 30px;
-  margin-right: 30px;
+.hook {
   margin-top: 20px;
+
 }
 
 .emojiSmall{
@@ -48,41 +58,58 @@
   font-weight: 100;
 }
 
-.learnMore > h6{
-  font-weight: 200;
-}
-
 .workingSection{
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
-  max-width: 900px;
+  margin-top: 60px;
 }
 
 .textSection{
   display: flex;
   flex-direction: column;
+  margin: 10px;
 }
 
 .landingImage{
-  width: 350px;
+  width: 40vw;
+  margin: 10px;
 }
 
-@media all and (max-width:800px)
+.landingPageHeaderImage{
+  width: 40vw;
+  margin-top: -60px;
+  margin-left: 40px;
+  max-width: 600px;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media all and (max-width:768px)
 {
-  .landingPageForm, .landingPageHeader{
-    display: block;
-    float: none;
-    width: 100%;
+  .landingPageHeader{
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    margin-top: 5vh;
   }
   .landingPage{
     display: flex;
     flex-direction: column;
   }
-  h6{
-    font-size: 2.5vmin;
+
+  .landingPageHeaderImage{
+    width: 80vw;
+    margin-top: 0px;
+    margin-left: 0px;
+    align-self: center;
   }
+
+  .hook{
+    margin-top: 20px;
+    align-items: center;
+  }
+ 
   .ml-embedded{
     padding-left: 10px;
     padding-right: 10px;
@@ -96,14 +123,13 @@
   .landingPageForm p{
     text-align: center !important;
   }
-}
-
-@media all and (max-width:700px)
-{
-  h6{
-    font-size: 3.25vmin;
+  .landingPageHook{
+    flex-direction: column;
   }
 }
+
+
+
 
 .landingArrow {
   animation: MoveUpDown 2s linear infinite;
@@ -122,3 +148,61 @@
   }
 }
 
+.navigationButtonLanding{
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-pack: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 0.325926px 0.733333px 0px, rgba(0, 0, 0, 0.07) 0px 1.540741px 2.866667px 0px, rgba(0, 0, 0, 0.05) 0px 4px 9px 0px;
+  -webkit-font-smoothing: antialiased;
+  align-items: center;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(18, 18, 18);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(255, 255, 255);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-style: none;
+  border-top-width: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 13.5px;
+  font-weight: 554;
+  height: 35px;
+  justify-content: center;
+  letter-spacing: 0.10125px;
+  line-height: 19px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  min-height: 30px;
+  min-width: 0px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  text-align: left;
+  text-decoration: none;
+  text-decoration-line: none;
+  white-space: nowrap;
+  width: fit-content;
+}
