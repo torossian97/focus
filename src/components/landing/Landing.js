@@ -1,6 +1,5 @@
 import React from 'react';
 import './landing.css';
-import { Helmet } from "react-helmet";
 
 import landingArrow from '../../assets/arrow-down-icon.svg';
 import landingImageOne from '../../assets/addInfo.svg';
@@ -8,7 +7,6 @@ import landingImageTwo from '../../assets/reminder.svg';
 import landingImageThree from '../../assets/card.svg';
 import landingImageFour from '../../assets/loseAll.svg';
 import landingMobileUser from '../../assets/mobileUser.svg';
-import Form from '../form/Form';
 
 const LandingPage = () => (
   <div className='landing'>
