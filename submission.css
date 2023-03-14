@@ -1,44 +1,51 @@
-.demo{
+.submission{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     width: 100%;
-    background-color: #ffffff;
+    height: fit-content;
 }
 
-.promptWrap{
+.submissionPageHeader{
     display: flex;
-    width:33%;
-}
-
-.prompt{
-    margin:15px;
-}
-
-.oldButton{
-    width: 33%;
-    background-color: #fe3d39 !important;
-    margin: 25px !important;
-    padding: 15px !important;
-}
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vw;
+    max-width: 1300px;
+    text-align: center;
+  }
+  
+  .submissionBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  
+  .submissionPageContents{
+    display: flex;
+    flex-direction: column;
+  }
 
 .submitButton{
     display: flex;
     -webkit-box-direction: normal;
     -webkit-box-pack: center;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 0.325926px 0.733333px 0px, rgba(0, 0, 0, 0.07) 0px 1.540741px 2.866667px 0px, rgba(0, 0, 0, 0.05) 0px 4px 9px 0px!important;;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 0.325926px 0.733333px 0px, rgba(0, 0, 0, 0.07) 0px 1.540741px 2.866667px 0px, rgba(0, 0, 0, 0.05) 0px 4px 9px 0px;
     -webkit-font-smoothing: antialiased;
     align-items: center;
     background-attachment: scroll;
     background-clip: border-box;
-    background-color: rgb(18, 18, 18)!important;;
+    background-color: rgb(18, 18, 18);
     background-image: none;
     background-origin: padding-box;
     background-position-x: 0%;
     background-position-y: 0%;
     background-size: auto;
-    border-bottom-color: rgb(255, 255, 255)!important;;
+    border-bottom-color: rgb(255, 255, 255);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-bottom-style: none;
@@ -59,56 +66,27 @@
     border-top-right-radius: 5px;
     border-top-style: none;
     border-top-width: 0px;
-    color: rgb(255, 255, 255)!important;;
+    color: rgb(255, 255, 255);
     font-size: 13.5px;
     font-weight: 554;
     height: 30px;
     justify-content: center;
     letter-spacing: 0.10125px;
-    line-height: 19px!important;;
+    line-height: 19px;
     list-style-image: none;
     list-style-position: outside;
     list-style-type: none;
-    min-height: 30px!important;;
+    min-height: 30px;
     min-width: 0px;
-    padding-bottom: 4px!important;;
-    padding-left: 11px!important;;
-    padding-right: 11px!important;;
-    padding-top: 4px!important;;
+    padding-bottom: 4px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 4px;
     text-align: left;
     text-decoration: none;
     text-decoration-line: none;
     white-space: nowrap;
-    margin-top: 20px!important;
+    margin-right: 20px;
+    margin-left: 10px;
     width: fit-content;
-}
-
-@media all and (max-width:1200px)
-{
-    .promptWrap{
-        width: 50%;
-    }
-    .submitButton{
-        width: 50%;
-    }
-}
-
-@media all and (max-width:1000px)
-{
-    .promptWrap{
-        width: 60%;
-    }
-    .submitButton{
-        width: 60%;
-    }
-}
-
-@media all and (max-width:800px)
-{
-    .promptWrap{
-        width: 90%;
-    }
-    .submitButton{
-        width: 90%;
-    }
 }
