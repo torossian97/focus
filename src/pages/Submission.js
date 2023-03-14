@@ -19,8 +19,6 @@ var payload = {
     "charity": "Red Cross"
   };
 
-window.onload = function(){ 
-    document.getElementById("status").innerHTML = payload.status;}
 
 
 const Task = () => {
